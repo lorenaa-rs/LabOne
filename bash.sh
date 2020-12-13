@@ -2,7 +2,7 @@
 
 function pingcheck()
 {
-	ping=`ping -c 1 $1 | grep bytes | wc -l`
+	ping=`ping $1 | grep bytes | wc -l`
 	if [ "$ping" -gt 1 ]; then
 		echo "HOST IS UP"
 	else 
@@ -12,4 +12,4 @@ function pingcheck()
 }
 
 
-watch -n 1 "(date '+TIME:%H:%M:%S'; echo 'Server1' ; pingcheck 192.168.0.21; echo '' ;echo 'Server2' ; pingcheck 192.168.0.22 ; echo '')">> log.tx
+watch -n 1 "(date '+TIME:%H:%M:%S'; echo 'Server1' ; pingcheck 192.168.0.21; echo '')">> log.tx
