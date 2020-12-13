@@ -10,4 +10,4 @@ function pingcheck()
 	fi
 }
 
-"pingcheck 192.168.0.21" >>logNew.txt
+pingcheck 192.168.0.21 >>logNew.txt
