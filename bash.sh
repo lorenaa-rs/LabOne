@@ -1,7 +1,7 @@
 #!/bin/bash
 function pingcheck()
 {
-	ping=`ping -c $1 | grep bytes | wc -l`
+	ping=`ping - $1 | grep bytes | wc -l`
 	if [ "$ping" -gt 1 ]; then
 		echo "HOST IS UP"
 	else 
