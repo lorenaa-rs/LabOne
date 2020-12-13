@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function pingcheck()
 {
 	ping=`ping $1 | grep bytes | wc -l`
@@ -10,6 +9,4 @@ function pingcheck()
 		exit
 	fi
 }
-
-
 watch -n 1 "(date '+TIME:%H:%M:%S'; echo 'Server1' ; pingcheck 192.168.0.21; echo '')">> log.tx
