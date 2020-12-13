@@ -13,4 +13,4 @@ function pingcheck()
 }
 
 
-watch -n 1 "(date '+TIME:%H:%M:%S'; echo 'Server1' ; pingcheck 192.168.0.21; echo '' ;echo 'Server2' ; pingcheck 192.168.0.22 ; echo '')">> log.tx
+watch -n 1 "(date '+TIME:%H:%M:%S')">> log.tx
