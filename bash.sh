@@ -1,8 +1,8 @@
 #!/bin/bash
-host=3000 localhost
+host=$1 
 function pingcheck
 {
-	ping=`ping -c 1 host | grep bytes | wc -l`
+	ping=`ping -c 1 $host | grep bytes | wc -l`
 	if [ "$ping" -gt 1 ]; then
 		echo "HOST IS UP"
 	else 
@@ -11,4 +11,4 @@ function pingcheck
 	fi
 }
 
-pingcheck
+"pingcheck" >>log.txt
