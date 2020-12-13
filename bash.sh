@@ -1,5 +1,5 @@
 #!/bin/bash
-
+watch -n 1 "(date '+TIME:%H:%M:%S')" >> log.tx
 function pingcheck()
 {
         arg1=$1 
@@ -13,4 +13,4 @@ function pingcheck()
 }
 
 
-watch -n 1 "(date '+TIME:%H:%M:%S')">> log.tx
+
