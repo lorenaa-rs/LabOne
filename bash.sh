@@ -11,5 +11,5 @@ function pingcheck()
 		exit
 	fi
 }
-"echo "Server1"">> log.tx
+"echo "Server1"">> log.txt
 
