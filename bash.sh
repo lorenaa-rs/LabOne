@@ -11,5 +11,5 @@ function pingcheck()
 		exit
 	fi
 }
-watch -n 1 "(echo 'Server1')">> log.tx
+"(echo 'Server1')">> log.tx
 
